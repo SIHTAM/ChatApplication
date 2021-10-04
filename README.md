@@ -1,3 +1,5 @@
+Online Group Chat application using PHP
+
 Prerequisites: 
 Technical knowledge:
 
