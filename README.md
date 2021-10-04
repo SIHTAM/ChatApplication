@@ -27,3 +27,11 @@ der zuerst schreibt, werden auf der rechten Seite des Chatrooms ausgerichtet und
 
 CSS: Platzieren Sie dies unter dem style-Tag oder in einer externen Stylesheet-Datei und verlinken Sie es. Diese CSS-Datei enthält die Stile für den Chatroom, 
 die Textnachrichten und die Chat-Bubbles.
+
+Steps to run the code:
+
+Save the file above as Group_chat.php inside a new folder in C:\xampp\htdocs. For example, I have placed the file inside the folder named “myfiles” inside the htdocs folder.
+Before running the application create a database by following the steps given above. Name the database as chat_app. Name the table as chats.
+Check the XAMPP control panel to ensure whether the Apache and MySQL are in running state.
+Open the browser and type localhost/myfiles. The index of that directory will open. Click on the Group_chat.php.
+Start sending messages and see the result
