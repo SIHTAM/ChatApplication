@@ -18,7 +18,7 @@ if (isset($_POST['submit'])){
     $m = mysqli_real_escape_string(
         $link, $_REQUEST['msg']);
     date_default_timezone_set('Europe/Zurich');
-    $ts=date('dd/mm/YYYY');
+    $ts=date('d/m/Y');
 
 // Attempt insert query execution
     $sql = "INSERT INTO chats (uname, msg, dt)
@@ -32,20 +32,19 @@ if (isset($_POST['submit'])){
     mysqli_close($link);
 }
 ?>
+<!DOCTYPE>
 <html>
 <head>
-    <link href="/stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/style.css" >
 <body onload="show_func()">
 <div id="container">
     <main>
         <header>
-            <img src="https://s3-us-west-2.amazonaws.com/
-             s.cdpn.io/1940306/ico_star.png" alt="">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_star.png" alt="">
             <div>
                 <h2>GROUP CHAT</h2>
             </div>
-            <img src="https://s3-us-west-2.amazonaws.com/
-            s.cdpn.io/1940306/ico_star.png" alt="">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_star.png" alt="">
         </header>
 
         <script>
