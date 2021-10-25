@@ -36,6 +36,7 @@ if (isset($_POST['submit'])){
 <html>
 <head>
     <link rel="stylesheet" href="/stylesheet/style.css" >
+    <title>Chat</title>
 <body onload="show_func()">
 <div id="container">
     <main>

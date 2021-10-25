@@ -24,7 +24,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <p>
     <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
     <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-    <a href="Group_chat.php" class="btn btn-danger ml-2">Go to Group Chat</a>
+    <a href="Group_chat.php" class="btn btn-warning">Go to Group Chat</a>
     <!--<a <?php $sql = "SELECT test.test() FROM ROUTINES" ?>-->
 </p>
 </body>
