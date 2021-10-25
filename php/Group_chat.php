@@ -40,11 +40,11 @@ if (isset($_POST['submit'])){
 <div id="container">
     <main>
         <header>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_star.png" alt="">
+            <a style="font-size: 28px">&#11088;</a>
             <div>
                 <h2>GROUP CHAT</h2>
             </div>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_star.png" alt="">
+            <a style="font-size: 28px">&#11088;</a>
         </header>
 
         <script>

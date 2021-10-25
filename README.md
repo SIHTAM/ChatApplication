@@ -34,4 +34,4 @@ Speichern Sie die PHP Datei Group_chat.php in einem neuen Ordner in C:\xampp\htd
 Erstellen Sie vor dem Ausführen der Anwendung eine Datenbank, indem Sie die oben angegebenen Schritte ausführen. Benennen Sie die Datenbank als chat_app. Benennen Sie die Tabelle als Chats.
 Überprüfen Sie in der XAMPP-Systemsteuerung, ob Apache und MySQL ausgeführt werden.
 Öffnen Sie den Browser und geben Sie localhost/myfiles ein. Der Index dieses Verzeichnisses wird geöffnet. Klicken Sie auf die Group_chat.php.
-Beginnen Sie mit dem Senden von Nachrichten und sehen Sie sich das Ergebnis an
+Beginnen Sie mit dem Senden von Nachrichten und sehen Sie sich das Ergebnis an.
