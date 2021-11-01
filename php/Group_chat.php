@@ -8,7 +8,7 @@ if (isset($_POST['submit'])){
 
 // Check connection
     if($link === false){
-        die("ERROR: Could not connect. "
+        die("ERROR: Could not connect to database. "
             . mysqli_connect_error());
     }
 
@@ -26,7 +26,7 @@ if (isset($_POST['submit'])){
     if(mysqli_query($link, $sql)){
         ;
     } else{
-        echo "ERROR: Message not sent!!!";
+        echo "ERROR: Message could not be sent!";
     }
     // Close connection
     mysqli_close($link);
@@ -47,7 +47,6 @@ if (isset($_POST['submit'])){
             </div>
             <a style="font-size: 28px">&#11088;</a>
         </header>
-
         <script>
             function show_func(){
 
