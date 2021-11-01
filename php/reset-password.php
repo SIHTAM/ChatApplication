@@ -8,6 +8,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
 
+$link = mysqli_connect("localhost",
+    "root", "", "test");
+
 // Include config file
 require_once "config.php";
 
