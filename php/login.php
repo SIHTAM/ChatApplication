@@ -15,9 +15,6 @@ require_once "config.php";
 $username = $password = "";
 $username_err = $password_err = $login_err = "";
 
-$link = mysqli_connect("localhost",
-    "root", "", "test");
-
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -38,25 +35,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT id, user_name, password FROM test.personaldaten WHERE user_name = ?";
-        echo $sql;
-        if($stmt = mysqli_prepare($link, $sql)){
+        $sql = "SELECT id, user_name, password FROM test.personaldaten WHERE user_name = :username";
+
+        if($stmt = $pdo->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
 
             // Set parameters
-            $param_username = $username;
+            $param_username = trim($_POST["username"]);
 
             // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                // Store result
-                mysqli_stmt_store_result($stmt);
-
+            if($stmt->execute()){
                 // Check if username exists, if yes then verify password
-                if(mysqli_stmt_num_rows($stmt) == 1){
-                    // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $id, $user_name, $hashed_password);
-                    if(mysqli_stmt_fetch($stmt)){
+                if($stmt->rowCount() == 1){
+                    if($row = $stmt->fetch()){
+                        $id = $row["id"];
+                        $username = $row["username"];
+                        $hashed_password = $row["password"];
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
                             session_start();
@@ -64,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $user_name;
+                            $_SESSION["username"] = $username;
 
                             // Redirect user to welcome page
                             header("location: welcome.php");
@@ -82,12 +77,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }
 
             // Close statement
-            mysqli_stmt_close($stmt);
+            unset($stmt);
         }
     }
 
     // Close connection
-    mysqli_close($link);
+    unset($pdo);
 }
 ?>
 
