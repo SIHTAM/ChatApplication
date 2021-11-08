@@ -1,6 +1,6 @@
-## Online-Gruppenchat-Anwendung mit PHP
+# Online-Gruppenchat-Anwendung mit PHP
 
- # Voraussetzungen:
+ ## Voraussetzungen:
  Grundlegende Kenntnisse in den Softwarearchitekturen, sowie den einhergehenden Programmierparadigmen.
  Technische Kenntnisse:
  HTML CSS JavaScript (Grundlagen) PHP (Datenbankanbindung) SQL-Abfragen
@@ -15,7 +15,7 @@
 
  Browser: Jedes aktivierte JavaScript reicht aus, um den Code auszuführen.
 
- # Die Gruppenchat-Anwendung: Dies ist eine einfache Gruppenchat-Anwendung, um die Idee der Anwendung zu demonstrieren, die Sie im WhatsApp Messenger mit dem localhost-Server sehen.
+ ## Die Gruppenchat-Anwendung: Dies ist eine einfache Gruppenchat-Anwendung, um die Idee der Anwendung zu demonstrieren, die Sie im WhatsApp Messenger mit dem localhost-Server sehen.
  Mehrere Benutzer können hierherkommen und ihre Ansichten teilen. Die MySQL-Datenbank speichert die Chats und ruft sie effektiv ab.
  Um diese Anwendung erfolgreich zu implementieren, müssen wir CSS und JavaScript zum Stylen der Benutzeroberfläche, HTML-Teil zum Rendern,
  PHP-Code zum Speichern und Abrufen aus der Datenbank erstellen. Diese Anwendung enthält zwei Felder, nämlich den Benutzernamen und die Textnachricht. Die Nachrichten des Benutzers,
@@ -24,7 +24,7 @@
  CSS: Platzieren Sie dies unter dem style-Tag oder in einer externen Stylesheet-Datei und verlinken Sie es. Diese CSS-Datei enthält die Stile für den Chatroom,
  die Textnachrichten und die Chat-Bubbles.
 
- # Schritte zum Ausführen des Codes:
+ ## Schritte zum Ausführen des Codes:
 
  Speichern Sie die PHP-Datei Group_chat.php in einem neuen Ordner in C:\xampp\htdocs. Zum Beispiel habe ich die Datei in den Ordner mit dem Namen „myfiles“ im Ordner htdocs gelegt.
  Erstellen Sie vor dem Ausführen der Anwendung eine Datenbank, indem Sie die oben angegebenen Schritte ausführen. Benennen Sie die Datenbank als chat_app. Benennen Sie die Tabelle als Chats.
