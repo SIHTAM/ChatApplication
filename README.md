@@ -1,4 +1,32 @@
-# Online-Gruppenchat-Anwendung mit PHP
+# Zielsetzung der Applikation
+Online-Chat-Applikation kann sich auf jede Art von Kommunikation über das Internet beziehen,
+die eine Echtzeitübertragung von Textnachrichten vom Sender zum Empfänger bietet.
+Chatnachrichten sind in der Regel kurz, damit andere Teilnehmer schnell antworten können.
+Dadurch wird ein einem gesprochenen Gespräch ähnliches Gefühl erzeugt, das den Chat von anderen textbasierten
+Online-Kommunikationsformen wie Internetforen und E-Mail unterscheidet. Online-Chat kann Punkt-zu-Punkt-Kommunikation
+sowie Multicast-Kommunikation von einem Sender zu vielen Empfängern und Sprach- und Video-Chat adressieren oder kann ein Merkmal
+eines Webkonferenzdienstes sein.
+
+Online-Chat-Applikation in einer weniger strengen Definition kann in erster Linie jeder direkte textbasierte oder videobasierte,
+Einzel-Chat oder Eins-zu-viele-Gruppen-Chat sein, unter Verwendung von Tools wie Instant Messenger, Internet Relay Chat (IRC),
+Talker und möglicherweise MUDs oder andere Online-Spiele. Der Ausdruck Online-Chat kommt vom Wort Chat, was "informelles Gespräch" bedeutet.
+Online-Chat umfasst webbasierte Anwendungen, die eine Kommunikation ermöglichen – oft direkt adressiert, aber anonym zwischen Benutzern in einer
+Mehrbenutzerumgebung. Webkonferenzen sind ein spezifischerer Onlinedienst, der oft als Dienst verkauft wird und auf einem vom Anbieter
+kontrollierten Webserver gehostet wird.
+
+Mein Projekt beinhaltet eine Chat Funktion, in welchen Sie sich mit Ihren Freunden unterhalten können.
+Das Prinzip ist ein Web-Socket geschrieben in PHP, worin Nachrichten mittels JSON übermittelt und in einer Datenbank speichert.
+Teilnehmen können alle Personen, die die Applikation installiert und den Web-Socket, über das entsprechende Protokoll, ansprechen können.
+
+Ich werde einen Login, sowie separat eine Sign-Up Seite anfertigen, um sich einzuloggen, respektive sich zu registrieren.
+Die dabei verwendeten Technologien sind hauptsächlich HTML/CSS, PHP, ODBC, phpMyAdmin MariaDB. Als Entwicklungsumgebung werde ich PHP-Storm
+verwenden und GitHub zur Versionskontrolle. Wenn nötig oder nach Bedarf werde ich noch weitere Technologien einbeziehen.
+
+Das Projekt entspricht einer 4-Tier Architektur, also Präsentation-, Business-, Data-Interface- und Data-Layer.
+Nur die Chat-Applikation, Group_chat.php, entspricht einer 3-Tier Architektur.
+
+
+# Die Online-Gruppenchat-Anwendung mit PHP
 
  ## Voraussetzungen:
  Grundlegende Kenntnisse in den Softwarearchitekturen, sowie den einhergehenden Programmierparadigmen.
